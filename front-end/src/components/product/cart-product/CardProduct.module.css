@@ -1,20 +1,23 @@
-.product{
+.product {
+    min-width: 0;
     width: 100%;
-    height: 150px;
+    min-height: 120px;
     display: flex;
     background-color: hsl(33, 19%, 69%);
     border: 2px solid grey;
 }
 
-.img{
-    min-width: 150px;
-    min-height: 100%;
+.img {
+    flex: 0 0 clamp(64px, 20vw, 150px);
+    width: clamp(64px, 20vw, 150px);
+    min-height: 120px;
+    object-fit: cover;
     background-color: #fff;
 }
 
-.info{
-    width: 100%;
-    height: 100%;
+.info {
+    flex: 1;
+    min-width: 0;
     background-color: hsl(34, 78%, 81%);
 
     display: flex;
@@ -23,7 +26,7 @@
     padding: 15px;
 }
 
-.info select{
+.info select {
     width: 30px;
     height: 30px;
     border: none;
@@ -31,23 +34,26 @@
     background-color: rgb(245, 245, 245);
 }
 
-.p_name{
-    font-size: 30px;
+.p_name {
+    font-size: clamp(14px, 3vw, 30px);
     margin-bottom: 10px;
+    overflow-wrap: anywhere;
 }
 
-.p_price{
-    font-size: 25px;
+.p_price {
+    font-size: clamp(16px, 2.5vw, 25px);
     font-weight: 550;
     margin-bottom: 15px;
 }
 
-.p_desc{
-    font-size: 16px;
+.p_desc {
+    font-size: clamp(12px, 1.6vw, 16px);
     margin-bottom: 5px;
+    overflow-wrap: anywhere;
 }
 
-.select_c{
+.select_c {
+    flex: 0 0 50px;
     width: 50px;
     display: flex;
     justify-content: center;
@@ -56,7 +62,24 @@
     padding: 10px;
 }
 
-.select{
+.select {
     width: 30px;
     height: 30px;
+}
+
+@media (max-width: 500px) {
+    .info {
+        padding: clamp(6px, 2vw, 10px);
+    }
+
+    .p_name,
+    .p_price {
+        margin-bottom: 5px;
+    }
+
+    .select_c {
+        flex-basis: 38px;
+        width: 38px;
+        padding: 5px;
+    }
 }

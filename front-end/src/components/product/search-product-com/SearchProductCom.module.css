@@ -26,3 +26,60 @@
     font-size: 18px;
     margin-top: 10px;
 }
+
+@media (min-width: 250px){
+    .container{
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .info{
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+    .image{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 400px){
+    .container{
+        width: 350px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+    .image{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 550px){
+    .container{
+        width: 500px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+    .image{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (min-width: 1000px){
+    .container{
+        width: 600px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+    .image{
+        width: 120px;
+        height: 120px;
+    }
+}
