@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    height: 840px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(218, 21%, 62%);
+    padding: 20px;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}

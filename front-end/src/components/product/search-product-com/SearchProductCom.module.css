@@ -1,0 +1,28 @@
+.container{
+    width: 600px;
+    height: 150px;
+    background-color: hsl(73, 6%, 73%);
+    box-shadow: 2px 2px 10px hsla(0, 0%, 0%, 0.200);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.image{
+    width: 120px;
+    height: 120px;
+}
+
+.name{
+    font-size: 18px;
+    margin-top: 10px;
+}
