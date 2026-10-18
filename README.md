@@ -38,6 +38,22 @@ cd back-end
 npm install
 npm start
 ```
+The server will run on http://localhost:3000.
+
+### 2. Start the React App
+In your second terminal, navigate to the `front-end` folder and start the development server:
+
+```bash
+cd front-end
+npm install
+npm start
+```
+The React app will open in your browser (usually at http://localhost:3001 or http://localhost:5173).
+
+### ⚠️ Requirements
+Make sure both terminals remain open while using the app.
+Ensure CORS is enabled in your Express server to allow the React app to fetch data.
+
 ![img](CartList.png)
 ![img](Home.png)
 ![img](ProductClick.png)
